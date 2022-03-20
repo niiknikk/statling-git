@@ -1,0 +1,219 @@
+// header
+.header{
+    width: 100%;
+    padding: 50px 20px;
+
+    &-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+}
+
+// project
+.project{
+    width: 100%;
+    padding: 40px 0;
+    &-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+        @include respond(tab-port){
+           width: 90%;
+        }
+
+    }
+    &-card{
+        padding: 30px;
+        max-width: 1040px;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #E1E1E1;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        align-items: flex-start;
+        transition: .15s;
+
+        &:hover{
+            border: 1px solid #4169e173;
+        }
+
+        @include respond(tab-port){
+            max-width: 440px;
+            padding: 30px;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &  img{
+            width: 400px;
+
+            @include respond(tab-port){
+                width: 100%;
+            }
+        }
+
+        &-content{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 5px;
+
+            & p{
+                width: 90%;
+                @include respond(phone){
+                    width: 100%;
+                }
+            }
+        }
+
+        & .btn{
+            &-group{
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+
+                gap: 40px;
+                @include respond(phone){
+                    flex-direction: column;
+                    gap: 30px;
+                }
+            }
+            &-cta{
+                order: 2;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5px;
+
+                & small{
+                    order: 1;
+                    font-style: italic;
+                    font-family: $ff-sourcepro;
+                    color :rgba(61, 61, 61, 0.7);
+                }
+            }
+        }
+    }
+}
+
+// tools and features
+.feature{
+    width: 100%;
+    padding: 50px 0;
+    
+    &-heading{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+
+        & ul{
+            padding: 0;margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vw;
+            flex-wrap: wrap;
+
+            & li{
+                padding: 0;margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #4169E1;
+
+                & span {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: rgba(225, 185, 65, 1);
+                }
+            }
+        }
+    }
+
+    &-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+
+    }
+    &-card{
+        width: 220px;
+        height: 160px;
+        border-radius: 5px;
+        background-color: #fff;
+        border: 1px solid #E1E1E1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+        transition: .15s;
+
+        &:hover{
+            border: 1px solid #4169e173;
+        }
+
+        & h3{
+            text-align: center;
+            width: 80%;
+        }
+    }
+}
+
+// footer
+.footer{
+    padding: 50px 50px;
+    background-color: #E1E1E1;
+    @include respond(phone){
+        padding: 50px 20px;
+    }   
+
+    &-container{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+        text-align: center;
+        @include respond(phone){
+            width: 90%;
+        } 
+        & a{
+            color: #4169E1 !important;
+            padding: 0 2px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
